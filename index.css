@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+:root {
+  --title: #46484c;
+  --promocional: #8b8b8bcc;
+  --texto-boton: #fff;
+  --fondo: #fffbf7;
+  --fondo-boton: #025157;
+}
+
+body {
+  background-color: var(--fondo);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slogan {
+  color: var(--promocional);
+}
+
+.crear-btn {
+  background-color: var(--fondo-boton);
+  color: var(--texto-boton);
+  width: 20vw;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  color: var(--title);
+}
+
+img {
+  width: 40vw;
+  margin: 3% 0;
+}
+
+input {
+  margin: 0 0 2% 0;
+  width: 30%;
+  border: none;
+  border-bottom: 1px solid var(--title);
+}
