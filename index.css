@@ -9,6 +9,7 @@
   --texto-boton: #fff;
   --fondo: #fffbf7;
   --fondo-boton: #025157;
+  --green: #67b54b;
 }
 
 body {
@@ -18,6 +19,33 @@ body {
   flex-direction: column;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+header {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 45px;
+}
+
+header nav {
+  width: 100%;
+  height: 100%;
+  padding: 0 25px;
+}
+
+header nav ul
+
+header nav ul .signin-btn a {
+  color: var(--green);
+}
+
+header nav ul .trial-btn button {
+  color: #ffffff;
+  background-color: var(--green);
+  border: none;
+  padding: 12px 14px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .slogan {
