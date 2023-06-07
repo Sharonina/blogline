@@ -10,6 +10,14 @@
   --fondo: #fffbf7;
   --fondo-boton: #025157;
   --green: #67b54b;
+  --green-gradient: linear-gradient(
+    to bottom,
+    #67b54b,
+    #2b9e5e,
+    #008567,
+    #006b65,
+    #025157
+  );
 }
 
 body {
@@ -64,7 +72,7 @@ header nav ul .trial-btn {
 
 header nav ul .trial-btn button {
   color: #ffffff;
-  background-color: var(--green);
+  background: var(--green);
   border: none;
   padding: 12px 14px;
   border-radius: 5px;
@@ -72,7 +80,7 @@ header nav ul .trial-btn button {
 }
 
 header nav ul .trial-btn button:hover {
-  background-color: #ffffff;
+  background: #ffffff;
   color: var(--green);
   border: 2px solid var(--green);
   box-shadow: 0px 4px 10px 1px rgba(210, 217, 211, 1);
@@ -95,7 +103,7 @@ h1 {
 }
 
 .texto-promocional {
-  width: 70%;
+  width: 85%;
   text-align: center;
   font-size: 1.6vw;
 }
@@ -119,22 +127,45 @@ h1 {
   display: inline-block;
   width: 100%;
   padding: 0 5%;
+  margin-top: 8%;
 }
 
 .center-section .center-section-right form #email {
-  width: 60%;
-  margin: 0 0 2% 0;
-
+  width: 65%;
   border: none;
-  border-bottom: 1px solid var(--title);
+  border-bottom: 1.4px solid #025157;
+  padding-bottom: 5px;
+  outline: none;
+  background: none;
+}
+
+.center-section .center-section-right form label {
+  font-size: 2vw;
 }
 
 .center-section .center-section-right form .crear-btn {
-  width: 35%;
+  width: 30%;
   height: 30px;
   border-radius: 5px;
-  background-color: var(--fondo-boton);
+  background: #ffffff;
+  color: var(--green);
+  border: 2px solid var(--green);
+  /* background-color: var(--fondo-boton); */
+
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.center-section .center-section-right form .crear-btn:hover {
   color: var(--texto-boton);
   border: none;
-  cursor: pointer;
+  background: linear-gradient(
+    to right bottom,
+    #67b54b,
+    #2b9e5e,
+    #008567,
+    #006b65,
+    #025157
+  );
+  box-shadow: 0px 4px 10px 1px rgba(210, 217, 211, 1);
 }
