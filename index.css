@@ -77,6 +77,7 @@ header nav ul {
 header nav ul .signin-btn a {
   color: var(--green);
   text-decoration: none;
+  font-size: 1.3rem;
 }
 
 header nav ul .trial-btn {
@@ -184,6 +185,6 @@ h1 {
 }
 
 .video {
-  width: 560px;
-  height: 315px;
+  width: 260px;
+  height: 215px;
 }
